@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filtering</title>
+    <script src="1.js"></script>
+    <style>
+        /* Add your styling here */
+        .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<!-- Filter UI -->
+<div>
+    <label for="category">Category:</label>
+    <select id="category">
+        <option value="all">All Categories</option>
+        <option value="Home">Home</option>
+        <option value="Apparel">Apparel</option>
+        <option value="Electronics">Electronics</option>
+    </select>
+
+    <label>Tags:</label>
+    <input type="checkbox" id="newTag"> <label for="newTag">New</label>
+    <input type="checkbox" id="saleTag"> <label for="saleTag">Sale</label>
+    <input type="checkbox" id="ecoFriendlyTag"> <label for="ecoFriendlyTag">Eco-friendly</label>
+</div>
+
+<!-- Product Listing -->
+<div id="product-listing"></div>
+<body onload="render()">
+
+
+
+</body>
+</html>
